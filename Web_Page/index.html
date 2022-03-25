@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <!--PLUGGIN ICONS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--PLUGGIN SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- CSS STYLES-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- BANNER -->
+        <div class="banner-wrapper">
+            <header>
+                <div class="header-inner">
+                    <a href="index.html" id="logo">
+                        <img src="img/pics/perro-logo.JPG" alt="perrito-pizza">
+                    </a>
+                    <!-- mobile navegation - etc responsive mode-->
+                    <nav>
+                        <a href="#" id="menu-icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <!--lista desordenada for navegation-->
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            <li>
+                                <a href="#skills">Habilidades</a>
+                            </li>
+                            <li>
+                                <a href="#port">Portafolio</a>
+                            </li>
+                            <li>
+                                <a href="#port">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="slide-wrap">
+                <!--unsorted list for images of the slider-->
+                <ul class="slider1">
+                    <li><img src="img/slider/slider-dogo-uno.jfif" alt=""></li>
+                    <li><img src="img/slider/slider-pizza-uno.jfif" alt=""></li>
+                    <li><img src="img/slider/slider-dogo-dos.jfif" alt=""></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!--SKILLS-->
+    <section class="one-third" id="skills">
+        <div class="icon-wrap">
+            <i class="fa fa-pencil-square-o"></i>
+        </div>
+        <h3>Graphic Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis unde, exercitationem id dignissimos
+            quod ab vero ullam doloremque ipsum,
+            omnis error, reiciendis sint harum impedit velit blanditiis veritatis minima eius!</p>
+    </section>
+
+    <section class="one-third" id="skills">
+        <div class="icon-wrap">
+            <i class="fa fa-file-code-o"></i>
+        </div>
+        <h3>Code</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis unde, exercitationem id dignissimos
+            quod ab vero ullam doloremque ipsum,
+            omnis error, reiciendis sint harum impedit velit blanditiis veritatis minima eius!</p>
+    </section>
+
+    <section class="one-third" id="skills">
+        <div class="icon-wrap">
+            <i class="fa fa-pencil"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis unde, exercitationem id dignissimos
+            quod ab vero ullam doloremque ipsum,
+            omnis error, reiciendis sint harum impedit velit blanditiis veritatis minima eius!</p>
+    </section>
+    <!--three same class services-->
+    <div class="one-third-padding" id="services">
+        <h3>Our services 1</h3>
+        <img src="img/pics/image1.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+    </div>
+
+    <div class="one-third-padding" id="services">
+        <h3>Our services 2</h3>
+        <img src="img/pics/image2.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+    </div>
+
+    <div class="one-third-padding" id="services">
+        <h3>Our services 3</h3>
+        <img src="img/pics/image3.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, in.</p>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="banner-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Info</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--seccion de texto-->
+                <ul>
+                    <li>
+                        <a href="mailto:alyssandra@website.com" target="_blank">
+                            <i class="fa fa-envelope-o">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/PerritosComePizza" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/PerritosComePizza" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/PerritosComePizza" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--SCRIPTS JQuery-->
+    <script>
+        $(document).ready(function () {
+            $('.slider1').bxSlider({
+                mode: 'fade',
+            });
+            $('.slider2').bxSlider({
+                mode: 'fade',
+            });
+            $('.slider3').bxSlider({
+                mode: 'fade',
+            });
+        });
+    </script>
+</body>
+
+</html>
